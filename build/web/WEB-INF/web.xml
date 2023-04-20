@@ -4,9 +4,17 @@
         <servlet-name>addFood</servlet-name>
         <servlet-class>addFood</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>addStaff</servlet-name>
+        <servlet-class>addStaff</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>addFood</servlet-name>
         <url-pattern>/addFood</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addStaff</servlet-name>
+        <url-pattern>/addStaff</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

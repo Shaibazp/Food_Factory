@@ -7,43 +7,21 @@
 <%@ include file="DB_Connection.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
-        <!-- Basic -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <!-- Mobile Metas -->
         <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
-
-        <!-- Site Metas -->
         <title>Food Funday Restaurant - One page HTML Responsive</title>
         <meta name="keywords" content="">
         <meta name="description" content="">
         <meta name="author" content="">
-
-        <!-- Site Icons -->
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Site CSS -->
         <link rel="stylesheet" href="css/style.css">
-        <!-- Responsive CSS -->
         <link rel="stylesheet" href="css/responsive.css">
-        <!-- color -->
         <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
-
-        <!-- Modernizer -->
         <script src="js/modernizer.js"></script>
-
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
     </head>
 
     <body>
@@ -97,20 +75,12 @@
                                 <h1>Dinner with us  <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Friends:Family:Officemates" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
                                 <h2>Accidental appearances </h2>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod</p>
-
-
                             </div>
-                            <!-- end banner-cell -->
                         </div>
-                        <!-- end banner-text -->
                     </div>
-                    <!-- end banner-static -->
                 </div>
-                <!-- end col -->
             </div>
-            <!-- end container -->
         </div>
-        <!-- end banner -->
 
         <div id="reservation" class="reservations-main pad-top-100 pad-bottom-100">
             <div class="container">
@@ -122,8 +92,6 @@
                                     Delete Menu Here			
                                 </h2>
                             </div>
-
-
 
                             <form method="post" action="deleteFood.jsp">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -141,21 +109,17 @@
                                                 } catch (Exception e) {
                                                     System.out.println(e);
                                                 }
-
                                             %>
                                         </select>
                                     </div>
                                 </div>
-                                <!-- end col -->
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+<!--                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="form-box">
                                         <input type="number" name="amount" id="email" placeholder="Amount" >
                                     </div>
                                 </div>
 
-                                <!-- end col -->
-
-                                <!-- end col -->
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="form-box">
                                         <select name="Food_Category" id="Food_Category" class="selectpicker">
@@ -167,10 +131,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <!-- end col -->
 
-
-                                <!-- end col -->
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="form-box">
                                         <select name="Menu_Category" id="Menu_Category" class="selectpicker">
@@ -180,7 +141,6 @@
                                             <option>Desert</option>
                                             <option>Drink</option>
                                             <option>Other</option>
-
                                         </select>
                                     </div>
                                 </div>
@@ -188,33 +148,21 @@
                                     <div class="form-group">
                                         <textarea class="form-control" cols="30" rows="7" placeholder="Food Details" name="info"></textarea>
                                     </div>
-                                </div>
-                                <!-- end col -->
-
+                                </div>-->
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="reserve-book-btn text-center">
                                         <input type="submit"  value="Delete Menu Details" class="btn btn-primary">
                                     </div>
                                 </div>
-                                <!-- end col -->
                             </form>
-                            <!-- end form -->
                         </div>
-                        <!-- end col -->
                     </div>
-                    <!-- end reservations-box -->
                 </div>
-                <!-- end row -->
             </div>
-            <!-- end container -->
         </div>
 
-        <!-- end reservations-main -->
-
         <div id="footer" class="footer-main">
-
-            <!-- end footer-news -->
             <div class="footer-box pad-top-70">
                 <div class="container">
                     <div class="row">
@@ -255,11 +203,9 @@
                                             </a>
                                         </li>
                                     </ul>
-
                                 </div>
-                                <!-- end footer-box-a -->
                             </div>
-                            <!-- end col -->
+
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="footer-box-b">
                                     <h3>New Menu</h3>
@@ -270,9 +216,8 @@
                                         <li><a href="#">Triple Truffle Trotters</a></li>
                                     </ul>
                                 </div>
-                                <!-- end footer-box-b -->
                             </div>
-                            <!-- end col -->
+
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="footer-box-c">
                                     <h3>Contact Us</h3>
@@ -291,13 +236,11 @@
                                         <span><a href="#">support@foodfunday.com</a></span>
                                     </p>
                                 </div>
-                                <!-- end footer-box-c -->
                             </div>
-                            <!-- end col -->
+
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="footer-box-d">
                                     <h3>Opening Hours</h3>
-
                                     <ul>
                                         <li>
                                             <p>Monday - Thursday </p>
@@ -309,15 +252,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- end footer-box-d -->
                             </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end footer-in-main -->
                     </div>
-                    <!-- end row -->
                 </div>
-                <!-- end container -->
+
                 <div id="copyright" class="copyright-main">
                     <div class="container">
                         <div class="row">
@@ -325,21 +264,16 @@
                                 <h6 class="copy-title"> Copyright &copy; 2017 Food Funday is powered by <a href="#" target="_blank"></a> </h6>
                             </div>
                         </div>
-                        <!-- end row -->
                     </div>
-                    <!-- end container -->
+
                 </div>
-                <!-- end copyright-main -->
             </div>
-            <!-- end footer-box -->
         </div>
-        <!-- end footer-main -->
 
         <a href="#" class="scrollup" style="display: none;">Scroll</a>
 
         <section id="color-panel" class="close-color-panel">
             <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
-            <!-- Colors -->
             <div class="segment">
                 <h4 class="gray2 normal no-padding">Color Scheme</h4>
                 <a title="orange" class="switcher orange-bg"></a>
@@ -349,11 +283,8 @@
             </div>
         </section>
 
-        <!-- ALL JS FILES -->
         <script src="js/all.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <!-- ALL PLUGINS -->
         <script src="js/custom.js"></script>
     </body>
-
 </html>
