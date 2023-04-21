@@ -1,3 +1,10 @@
+<%@page import="java.util.Base64"%>
+<%@page import="java.io.OutputStream"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
+<%@page import="java.util.Date"%>
+<%@page import="java.sql.*"%>
+<%@ include file="DB_Connection.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +55,6 @@
                 <div class="container">
                     <div class="row">
                         <div class="main-menu">
-                            <!-- navbar -->
                             <nav class="navbar navbar-default" id="mainNav">
                                 <div class="navbar-header">
                                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -62,39 +68,26 @@
                                             <img src="images/logo.png" alt="">
                                         </a>
                                     </div>
-                                </div>
+                                </div>s
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li ><a href="admin_home.jsp">Home</a></li>
-                                        <li class="active"><a href="menu.jsp">Menu</a></li>
-                                        <li><a href="staff.jsp">Staff</a></li>
-
-                                        <li><a href="view_bills.jsp">View Bills</a></li>
-                                        <li><a href="view_orders.jsp">View Orders</a></li>
-                                        <li><a href="view_customer.jsp">View Customer</a></li>
+                                        <li class="active"><a href="#banner">Home</a></li>
+                                        <li><a href="food.jsp">Food Order</a></li>
+                                        <li><a href="myorder.jsp">My Order</a></li>
+                                        <li><a href="bills.jsp">My Bills</a></li>
                                         <li><a href="review.jsp">Review</a></li>
-                                        <!--    <li><a href="edit_food.jsp">Edit Food</a></li>
-                                              <li><a href="edit_staff.jsp">Edit Staff</a></li>
-                                        <li><a href="feedback.jsp">Feedback</a></li>
-                                 <li><a href="#reservation">Reservaion</a></li>
-                                         
-                                             <li><a href="AboutUS.jsp">About us</a></li>
-                                           <li><a href="#footer">Contact us</a></li>-->
-                                        <li><a href="index.jsp">Logout</a></li>
+                                        <!--<li><a href="feedback.jsp">Feedback</a></li>-->
+                                        <li><a href="gallery.jsp">Gallery</a></li>
+                                        <li><a href="AboutUS.jsp">About us</a></li>
+                                        <li><a href="#footer">Contact us</a></li>
                                     </ul>
                                 </div>
-                                <!-- end nav-collapse -->
                             </nav>
-                            <!-- end navbar -->
                         </div>
                     </div>
-                    <!-- end row -->
                 </div>
-                <!-- end container-fluid -->
             </header>
-            <!-- end header -->
         </div>
-        <!-- end site-header -->
 
         <div id="banner" class="banner full-screen-mode parallax">
             <div class="container pr">
@@ -120,80 +113,73 @@
         </div>
         <!-- end banner -->
 
-        <div id="reservation" class="reservations-main pad-top-100 pad-bottom-100">
+        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+            <h2 class="block-title text-center">
+                Order Details	
+            </h2>
+        </div>
+        <br>
+
+        <div id="fh5co-tours" class="fh5co-section-gray">
             <div class="container">
-                <div class="row">
-                    <div class="form-reservations-box">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                                <h2 class="block-title text-center">
-                                    Add Menu Here			
-                                </h2>
-                            </div>
-
-                            <form  method="post" action="/Food_Factory/addFood" enctype="multipart/form-data">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="form-box">
-                                        <input type="text" name="dishName" id="form_name" placeholder="Dish Name" required="required" data-error="Dish Name is required.">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="form-box">
-                                        <input type="number" name="amount" id="email" placeholder="Amount" required="required" data-error="Amount is required.">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="form-box">
-                                        <select name="FoodCategory" id="Food_Category" class="selectpicker">
-                                            <option selected disabled>Food Category</option>
-                                            <option value="South Indian">South Indian</option>
-                                            <option value="North indian">North indian</option>
-                                            <option value="Chinese">Chinese</option>
-                                            
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="form-box">
-                                        <select name="MenuCategory" id="Menu_Category" class="selectpicker">
-                                            <option selected disabled>Menu Category</option>
-                                            <option value="Breakfast">Breakfast</option>
-                                            <option value="Main Dish">Main Dish</option>
-                                            <option value="Desert">Desert</option>
-                                            <option value="Starter">Starter</option>
-                                            <option value="Drink">Drink</option>
-                                            <option value="Other">Other</option>
-
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" cols="30" rows="7" placeholder="Food Details" name="info"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    Add Photos
-                                    <div class="form-group">
-                                        <input type="file" id="myFile" name="photo1">
-                                    </div>
-                                </div> 
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="reserve-book-btn text-center">
-                                        <input type="submit"  value="Add Menu Details" class="btn btn-primary">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                <%  String pno = null;     
+                    try {
+                        PreparedStatement pstn1 = con.prepareStatement("select * from orderdetail where mobile=?");
+                        pstn1.setString(1, (String)session.getAttribute("mobile").toString());
+                        ResultSet rs = pstn1.executeQuery();
+                        while (rs.next()) {
+//                            byte[] imgData = rs.getBytes(7);
+//                            String encode = Base64.getEncoder().encodeToString(imgData);
+//                            request.setAttribute("imgbase", encode);
+                          
+%>
+                <div class="card mb-3">
+<!--                    <div class="img-square-wrapper">
+                        <img class="" src="../web/featured-image-01.jpg" alt="Card image cap" style="height: 110%; width: 80%;">
+                    </div>-->
+                    <!--<img src="../featured-image-01.jpg" class="" alt="Card image cap" style="height: 300px;">-->
+                    <div class="card-body">
+                        <h1 class="card-title" style="font-style: italic;"><b><%=rs.getString(2)%></b></h1>
+                        <p class="card-text">Dish Name = <%=rs.getString(2)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Food Category = <%=rs.getString(4)%></p>
+                        <p class="card-text">Menu Category = <%=rs.getString(3)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Price = <%=rs.getString(5)%></p>
+                        
+                        <div class="reserve-book-btn" style="margin-left: 670px;margin-top: -105px;">
+                            <a href="" class="btn btn-primary" style="height: 50px;width: 300px;">Add Review</a>
+                        </div> <br /><br />
                     </div>
+                    <!--                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                            <div class="form-box">
+                                                <select name="NoOfPlats" id="Menu_Category" class="selectpicker">
+                                                    <option selected disabled>Number Of Plates</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                    
+                                                </select>
+                    
+                                            </div>
+                                        </div>
+                                        <div class="reserve-book-btn" style="margin-left: 370px;margin-top: -28px;">
+                                            <input type="submit"  value="Add to Cart" class="btn btn-primary" style="height: 50px;width: 200px;">
+                                        </div>-->
                 </div>
+
+
+                <%
+                       
+}
+                    } catch (Exception e) {
+                        System.out.println(e);
+                    }
+
+                %>
             </div>
         </div>
+
+
+        <!-- end reservations-main -->
 
         <div id="footer" class="footer-main">
 
@@ -296,9 +282,9 @@
                             </div>
                             <!-- end col -->
                         </div>
- 
+                        <!-- end footer-in-main -->
                     </div>
-
+                    <!-- end row -->
                 </div>
                 <!-- end container -->
                 <div id="copyright" class="copyright-main">
@@ -308,10 +294,15 @@
                                 <h6 class="copy-title"> Copyright &copy; 2017 Food Funday is powered by <a href="#" target="_blank"></a> </h6>
                             </div>
                         </div>
+                        <!-- end row -->
                     </div>
+                    <!-- end container -->
                 </div>
+                <!-- end copyright-main -->
             </div>
+            <!-- end footer-box -->
         </div>
+        <!-- end footer-main -->
 
         <a href="#" class="scrollup" style="display: none;">Scroll</a>
 
@@ -327,8 +318,10 @@
             </div>
         </section>
 
+        <!-- ALL JS FILES -->
         <script src="js/all.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <!-- ALL PLUGINS -->
         <script src="js/custom.js"></script>
     </body>
 

@@ -151,6 +151,7 @@
                                             <option value="South Indian">South Indian</option>
                                             <option value="North indian">North indian</option>
                                             <option value="Chinese">Chinese</option>
+                                            
                                             <option value="Other">Other</option>
                                         </select>
                                     </div>
@@ -163,6 +164,7 @@
                                             <option value="Breakfast">Breakfast</option>
                                             <option value="Main Dish">Main Dish</option>
                                             <option value="Desert">Desert</option>
+                                            <option value="Starter">Starter</option>
                                             <option value="Drink">Drink</option>
                                             <option value="Other">Other</option>
 

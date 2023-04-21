@@ -68,10 +68,8 @@
                                     <li class="active"><a href="#banner">Home</a></li>
                                     <li><a href="food.jsp">My Order</a></li>
                                     <li><a href="bills.jsp">My Bills</a></li>
-                                   
                                     <li><a href="review.jsp">Review</a></li>
                                     <li><a href="feedback.jsp">Feedback</a></li>
-                            <!--  <li><a href="#reservation">Reservaion</a></li>-->
                                      <li><a href="gallery.jsp">Gallery</a></li>
                                       <li><a href="AboutUS.jsp">About us</a></li>
                                     <li><a href="#footer">Contact us</a></li>

@@ -65,7 +65,6 @@ public class addStaff extends HttpServlet
             pstmt.setString(6, StaffInfo);
             
             if (inputStream != null) {
-                // fetches input stream of the upload file for the blob column
                 pstmt.setBlob(7, inputStream);
             }
 
