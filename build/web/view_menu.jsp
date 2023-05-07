@@ -111,14 +111,13 @@
             <!-- end container -->
         </div>
         <!-- end banner -->
-
+        <br />
         <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
             <h2 class="block-title text-center">
                 Menu Details	
             </h2>
         </div>
         <br>
-        <br>   <br>   <br>   <br>   <br>
 
         <div id="fh5co-tours" class="fh5co-section-gray">
                     <div class="container">
@@ -133,14 +132,12 @@
                 %>
                 
                         <div class="card mb-3">
-                            <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h1 class="card-title" style="font-style: italic;"><b><%=rs.getString(2)%></b></h1>
-                                
-                                <p class="card-text">Dish Name = <%=rs.getString(2)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Food Category = <%=rs.getString(4)%></p>
-                                
-                                <p class="card-text">Menu Category = <%=rs.getString(5)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Price = <%=rs.getString(3)%></p>
-                                <p class="card-text">Info = <%=rs.getString(6)%>
+                            <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" alt="Card image cap" style="height: 80%; width: 60%;">
+                            <div class="card-body" >
+                                <h1 class="card-title" style="font-style: italic;margin-top: 5px;margin-bottom: 10px;font-size: xx-large;"><b><%=rs.getString(2)%></b> </h1>   
+                                <h1 class="card-title" style="font-style: italic;font-size: x-large;margin-top: -10px;"><%=rs.getString(2)%> is a delicious <%=rs.getString(4)%> Food, You can prefer it as a <%=rs.getString(5)%>. </h1>
+                                <h1 class="card-text" style="font-style: italic;font-size: x-large;margin-top: -10px;"><b>Rs.</b> <%=rs.getString(3)%>.00</h1>
+                                <h1 class="card-title" style="font-style: italic;font-size: x-large;margin-top: -10px;"><%=rs.getString(6)%></h1>
                             </div>
                         </div><br />
                     

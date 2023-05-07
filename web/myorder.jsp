@@ -71,12 +71,11 @@
                                 </div>s
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li class="active"><a href="#banner">Home</a></li>
+                                        <li ><a href="#banner">Home</a></li>
                                         <li><a href="food.jsp">Food Order</a></li>
-                                        <li><a href="myorder.jsp">My Order</a></li>
+                                        <li class="active"><a href="myorder.jsp">My Order</a></li>
                                         <li><a href="bills.jsp">My Bills</a></li>
                                         <li><a href="review.jsp">Review</a></li>
-                                        <!--<li><a href="feedback.jsp">Feedback</a></li>-->
                                         <li><a href="gallery.jsp">Gallery</a></li>
                                         <li><a href="AboutUS.jsp">About us</a></li>
                                         <li><a href="#footer">Contact us</a></li>
@@ -112,7 +111,7 @@
             <!-- end container -->
         </div>
         <!-- end banner -->
-
+        <br />
         <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
             <h2 class="block-title text-center">
                 Order Details	
@@ -128,45 +127,18 @@
                         pstn1.setString(1, (String)session.getAttribute("mobile").toString());
                         ResultSet rs = pstn1.executeQuery();
                         while (rs.next()) {
-//                            byte[] imgData = rs.getBytes(7);
-//                            String encode = Base64.getEncoder().encodeToString(imgData);
-//                            request.setAttribute("imgbase", encode);
-                          
 %>
                 <div class="card mb-3">
-<!--                    <div class="img-square-wrapper">
-                        <img class="" src="../web/featured-image-01.jpg" alt="Card image cap" style="height: 110%; width: 80%;">
-                    </div>-->
-                    <!--<img src="../featured-image-01.jpg" class="" alt="Card image cap" style="height: 300px;">-->
-                    <div class="card-body">
-                        <h1 class="card-title" style="font-style: italic;"><b><%=rs.getString(2)%></b></h1>
-                        <p class="card-text">Dish Name = <%=rs.getString(2)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Food Category = <%=rs.getString(4)%></p>
-                        <p class="card-text">Menu Category = <%=rs.getString(3)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Price = <%=rs.getString(5)%></p>
-                        
-                        <div class="reserve-book-btn" style="margin-left: 670px;margin-top: -105px;">
-                            <a href="" class="btn btn-primary" style="height: 50px;width: 300px;">Add Review</a>
+                        <img src="images/food.png" class="" alt="Card image cap" style="height: 110px; width: 110px; margin-bottom: -120px;">
+                        <div class="card-body" style=" margin-left: 220px;">
+                        <h1 class="card-title" style="font-style: normal; font-size: 25px;"><b><%=rs.getString(2)%></b></h1>
+                        <p class="card-text" style="font-size: 20px; ">Rs. <%=rs.getString(5)%> .00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Serves 1  </p>
+                        <p class="card-text" style="font-size: 20px; margin-top: -15px;"> Delicious <%=rs.getString(3)%> Food.
+                        <div class="reserve-book-btn" style="margin-left: 670px;margin-top: -120px;">
+                            <a href="updatenoPlates.jsp?type=m&id=<%=rs.getString(1)%>&qty=<%=rs.getString(6)%>" class="btn btn-primary" style="height: 50px;width: 60px;font-weight: bold;font-size: 20px;">-1</a> <span style="font-weight: bold;font-size: 20px;margin-left: 20px;margin-right: 20px;"><%=rs.getString(6)%></span> <a href="updatenoPlates.jsp?type=a&id=<%=rs.getString(1)%>&qty=<%=rs.getString(6)%>" class="btn btn-primary" style="height: 50px;width: 60px;font-weight: bold;font-size: 20px;">+1</a>
                         </div> <br /><br />
                     </div>
-                    <!--                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                            <div class="form-box">
-                                                <select name="NoOfPlats" id="Menu_Category" class="selectpicker">
-                                                    <option selected disabled>Number Of Plates</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                    
-                                                </select>
-                    
-                                            </div>
-                                        </div>
-                                        <div class="reserve-book-btn" style="margin-left: 370px;margin-top: -28px;">
-                                            <input type="submit"  value="Add to Cart" class="btn btn-primary" style="height: 50px;width: 200px;">
-                                        </div>-->
                 </div>
-
-
                 <%
                        
 }

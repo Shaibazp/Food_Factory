@@ -8,6 +8,7 @@
 <%    String CustomerName = request.getParameter("CustomerName");
     String CustomerNumber = request.getParameter("CustomerNumber");
     session.setAttribute("mobile", CustomerNumber);
+    session.setAttribute("name", CustomerName);
     try {
         String sql = "insert into customerdetail(custName, custMobile) values(?, ?)";
         PreparedStatement pstmt = con.prepareStatement(sql);

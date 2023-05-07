@@ -23,7 +23,7 @@
             pstmt.setString(2, fcate);
             pstmt.setString(3, mcate);
             pstmt.setString(4, price);
-            pstmt.setString(5, noplates);
+            pstmt.setString(5, "1");
             pstmt.setString(6, mobile);
             int row = pstmt.executeUpdate();
             if (row > 0) {

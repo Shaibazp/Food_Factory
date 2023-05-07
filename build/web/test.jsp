@@ -1,19 +1,25 @@
-<%-- 
-    Document   : test
-    Created on : Apr 22, 2023, 12:12:04 AM
-    Author     : Acer
---%>
+package tests;
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-       
-        <img  src="../web/hotel1.jpeg" alt="Card image cap" style="height: 110%; width: 80%;">
-                
-    </body>
-</html>
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+public class test {
+   public static void main(String[] args) {
+   
+      moveFile("C:/test/aas.PNG", "C:/test/New folder/aass.PNG");
+   }
+   private static void moveFile(String src, String dest ) {
+      Path result = null;
+      try {
+         result = Files.move(Paths.get(src), Paths.get(dest));
+      } catch (IOException e) {
+         System.out.println("Exception while moving file: " + e.getMessage());
+      }
+      if(result != null) {
+         System.out.println("File moved successfully.");
+      }else{
+         System.out.println("File movement failed.");
+      }
+   }
+}

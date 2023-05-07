@@ -131,50 +131,21 @@
                             request.setAttribute("imgbase", encode);
                           
 %>
-                <div class="card mb-3">
-                    <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" style="height: 300px;">
-                    <div class="card-body">
-                        <h1 class="card-title" style="font-style: italic;"><b><%=rs.getString(2)%></b></h1>
-                        <p class="card-text">Dish Name = <%=rs.getString(2)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Food Category = <%=rs.getString(4)%></p>
-                        <p class="card-text">Menu Category = <%=rs.getString(5)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Price = <%=rs.getString(3)%></p>
-                        <p class="card-text">Info = <%=rs.getString(6)%>
-                        <div class="form-box" style="width: 300px;">
-                            <select name="NoOfPlats" id="Menu_Category" class="selectpicker">
-                                <option selected disabled>Number Of Plates</option>
-                                <%
-                                    PreparedStatement pstn12 = con.prepareStatement("select * from plates");
-                        ResultSet rs2 = pstn12.executeQuery();
-                        while (rs2.next()) {
-                            pno = rs2.getString(2);
-                                %>
-                                <option value="<%=pno%>"><%=pno%></option>
-                                <%
-                                }
-                                %>
 
-                            </select>
+                <div class="card mb-3">
+                    <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" style="height: 80%; width: 60%;">
+                    <div class="card-body">
+                        <h1   class="card-title" style="font-style: italic;margin-top: 5px;margin-bottom: 10px;font-size: x-large;font-weight: bold;"><span id="dishname"><%=rs.getString(2)%></span></h1>   
+                        <h1 class="card-title" style="font-style: italic;margin-top: -7px;font-size: 22px;"><b><%=rs.getString(2)%></b> is a delicious <span id="foodc" style="font-weight: bold;"><%=rs.getString(4)%></span> Food, You can prefer it as a <span id="menuc"><%=rs.getString(5)%></span>. </h1>
+                        <h1 class="card-text" style="font-style: italic;margin-top: -7px;font-size: 22px;"><b>Rs.</b> <span id="price"><%=rs.getString(3)%></span>.00</h1>
+                                <h1 class="card-title" style="font-style: italic;margin-top: -7px;font-size: 22px;"><%=rs.getString(6)%></h1>
+                        <div class="form-box" style="width: 300px;">
+                            
                         </div>
-                        <div class="reserve-book-btn" style="margin-left: 370px;margin-top: -105px;">
-                            <a href="orderbook.jsp?dname=<%=rs.getString(2)%>&fcate=<%=rs.getString(4)%>&mcate=<%=rs.getString(5)%>&price=<%=rs.getString(3)%>&noplates=<%=pno%>" class="btn btn-primary" style="height: 50px;width: 300px;">Add to Cart</a>
+                        <div class="reserve-book-btn" style="margin-left: 170px;margin-top: -105px;">
+                            <a href="orderbook.jsp?dname=<%=rs.getString(2)%>&fcate=<%=rs.getString(4)%>&mcate=<%=rs.getString(5)%>&price=<%=rs.getString(3)%>" class="btn btn-primary" style="height: 50px;width: 300px;text-align: center;font-weight: bold;font-size: 20px;">Add to Cart</a>
                         </div> <br /><br />
                     </div>
-                    <!--                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                            <div class="form-box">
-                                                <select name="NoOfPlats" id="Menu_Category" class="selectpicker">
-                                                    <option selected disabled>Number Of Plates</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                    
-                                                </select>
-                    
-                                            </div>
-                                        </div>
-                                        <div class="reserve-book-btn" style="margin-left: 370px;margin-top: -28px;">
-                                            <input type="submit"  value="Add to Cart" class="btn btn-primary" style="height: 50px;width: 200px;">
-                                        </div>-->
                 </div>
 
 
@@ -189,8 +160,7 @@
             </div>
         </div>
 
-
-        <!-- end reservations-main -->
+        <!-- end reservations-main 
 
         <div id="footer" class="footer-main">
 

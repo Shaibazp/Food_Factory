@@ -71,14 +71,14 @@
                                 </div>
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li ><a href="admin_home.jsp">Home</a></li>
-                                        <li class="active"><a href="menu.jsp">Menu</a></li>
-                                        <li><a href="add_staff.jsp">Staff</a></li>
-                                        <li><a href="view_bills.jsp">View Bills</a></li>
-                                        <li><a href="view_orders.jsp">View Orders</a></li>
-                                        <li><a href="view_customer.jsp">View Customer</a></li>
+                                        <li class="active"><a href="#banner">Home</a></li>
+                                        <li><a href="myorder.jsp">My Order</a></li>
+                                        <li><a href="bills.jsp">My Bills</a></li>
                                         <li><a href="review.jsp">Review</a></li>
-                                        <li><a href="index.jsp">Logout</a></li>
+                                        <li><a href="feedback.jsp">Feedback</a></li>
+                                        <li><a href="gallery.jsp">Gallery</a></li>
+                                        <li><a href="AboutUS.jsp">About us</a></li>
+                                        <li><a href="#footer">Contact us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -111,7 +111,7 @@
             <!-- end container -->
         </div>
         <!-- end banner -->
-        <br />
+
         <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
             <h2 class="block-title text-center">
                 Menu Details	
@@ -120,38 +120,47 @@
         <br>
 
         <div id="fh5co-tours" class="fh5co-section-gray">
-                    <div class="container">
-                <% 
-                        try {
-                            PreparedStatement pstn1 = con.prepareStatement("select * from fooddetails");
-                            ResultSet rs = pstn1.executeQuery();
-                            while (rs.next()) {
-                                byte[] imgData = rs.getBytes(7);
-                                String encode = Base64.getEncoder().encodeToString(imgData);
-                                request.setAttribute("imgbase", encode);
-                %>
-                
-                        <div class="card mb-3">
-                            <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" alt="Card image cap" style="height: 80%; width: 60%;">
-                            <div class="card-body" >
-                                <h1 class="card-title" style="font-style: italic;margin-top: 5px;margin-bottom: 10px;font-size: xx-large;"><b><%=rs.getString(2)%></b> </h1>   
-                                <h1 class="card-title" style="font-style: italic;font-size: x-large;margin-top: -10px;"><%=rs.getString(2)%> is a delicious <%=rs.getString(4)%> Food, You can prefer it as a <%=rs.getString(5)%>. </h1>
-                                <h1 class="card-text" style="font-style: italic;font-size: x-large;margin-top: -10px;"><b>Rs.</b> <%=rs.getString(3)%>.00</h1>
-                                <h1 class="card-title" style="font-style: italic;font-size: x-large;margin-top: -10px;"><%=rs.getString(6)%></h1>
-                            </div>
-                        </div><br />
-                    
-                <%
-                    }
-                        } catch (Exception e) {
-                            System.out.println(e);
-                        }
-                    
-                %>
-                </div>
+            <div class="container">
+                <%  String pno = null;     
+                    try {
+                        PreparedStatement pstn1 = con.prepareStatement("select * from fooddetails where FoodCategory='North indian' AND MenuCategory='Starter'");
+                        ResultSet rs = pstn1.executeQuery();
+                        while (rs.next()) {
+                            byte[] imgData = rs.getBytes(7);
+                            String encode = Base64.getEncoder().encodeToString(imgData);
+                            request.setAttribute("imgbase", encode);
+                          
+%>
+
+                <div class="card mb-3">
+                    <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" style="height: 80%; width: 60%;">
+                    <div class="card-body">
+                        <h1   class="card-title" style="font-style: italic;margin-top: 5px;margin-bottom: 10px;font-size: x-large;font-weight: bold;"><span id="dishname"><%=rs.getString(2)%></span></h1>   
+                        <h1 class="card-title" style="font-style: italic;margin-top: -7px;font-size: 22px;"><b><%=rs.getString(2)%></b> is a delicious <span id="foodc" style="font-weight: bold;"><%=rs.getString(4)%></span> Food, You can prefer it as a <span id="menuc"><%=rs.getString(5)%></span>. </h1>
+                        <h1 class="card-text" style="font-style: italic;margin-top: -7px;font-size: 22px;"><b>Rs.</b> <span id="price"><%=rs.getString(3)%></span>.00</h1>
+                                <h1 class="card-title" style="font-style: italic;margin-top: -7px;font-size: 22px;"><%=rs.getString(6)%></h1>
+                        <div class="form-box" style="width: 300px;">
+                            
+                        </div>
+                        <div class="reserve-book-btn" style="margin-left: 170px;margin-top: -105px;">
+                            <a href="orderbook.jsp?dname=<%=rs.getString(2)%>&fcate=<%=rs.getString(4)%>&mcate=<%=rs.getString(5)%>&price=<%=rs.getString(3)%>" class="btn btn-primary" style="height: 50px;width: 300px;text-align: center;font-weight: bold;font-size: 20px;">Add to Cart</a>
+                        </div> <br /><br />
+                    </div>
                 </div>
 
-        <!-- end reservations-main -->
+
+                <%
+                       
+}
+                    } catch (Exception e) {
+                        System.out.println(e);
+                    }
+
+                %>
+            </div>
+        </div>
+
+        <!-- end reservations-main 
 
         <div id="footer" class="footer-main">
 

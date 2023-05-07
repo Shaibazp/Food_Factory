@@ -126,14 +126,13 @@
             <!-- end container -->
         </div>
         <!-- end banner -->
-
+<br />
         <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
             <h2 class="block-title text-center">
                 Staff Details	
             </h2>
         </div>
         <br>
-        <br>   <br>   <br>   <br>   <br>
 
         <div id="fh5co-tours" class="fh5co-section-gray">
                     <div class="container">
@@ -146,15 +145,13 @@
                                 String encode = Base64.getEncoder().encodeToString(imgData);
                                 request.setAttribute("imgbase", encode);
                 %>
-                
                         <div class="card mb-3">
-                            <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h1 class="card-title" style="font-style: italic;"><b><%=rs.getString(2)%></b></h1>
-                                
-                                <p class="card-text">Name = <%=rs.getString(2)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email-Id = <%=rs.getString(3)%></p>
-                                <p class="card-text">Contact No = <%=rs.getString(4)%> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Salary = <%=rs.getString(5)%></p>
-                                <p class="card-text">Info = <%=rs.getString(6)%>
+                            <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" alt="Card image cap" style="height: 80%; width: 60%;">
+                            <div class="card-body" >
+                                <h1 class="card-title" style="font-style: italic;margin-top: 5px;margin-bottom: 10px;font-size: xx-large;"><b><%=rs.getString(2)%></b> </h1>   
+                                <h1 class="card-title" style="font-style: italic;font-size: x-large;margin-top: -10px;"><%=rs.getString(2)%> is a <%=rs.getString(6)%> of Food Factory.</h1>
+                                <h1 class="card-text" style="font-style: italic;font-size: x-large;margin-top: -10px;"><b>Mobile No.:</b> <%=rs.getString(4)%> &nbsp;&nbsp;&nbsp;&nbsp; <b>Email-Id:</b> <%=rs.getString(3)%></h1>
+                                <h1 class="card-text" style="font-style: italic;font-size: x-large;margin-top: -10px;"><%=rs.getString(7)%></h1>
                             </div>
                         </div><br />
                     
@@ -168,11 +165,7 @@
                 </div>
                 </div>
 
-        <!-- end reservations-main -->
-
         <div id="footer" class="footer-main">
-
-            <!-- end footer-news -->
             <div class="footer-box pad-top-70">
                 <div class="container">
                     <div class="row">
@@ -215,7 +208,6 @@
                                     </ul>
 
                                 </div>
-                                <!-- end footer-box-a -->
                             </div>
                             <!-- end col -->
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -228,7 +220,6 @@
                                         <li><a href="#">Triple Truffle Trotters</a></li>
                                     </ul>
                                 </div>
-                                <!-- end footer-box-b -->
                             </div>
                             <!-- end col -->
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -249,9 +240,7 @@
                                         <span><a href="#">support@foodfunday.com</a></span>
                                     </p>
                                 </div>
-                                <!-- end footer-box-c -->
                             </div>
-                            <!-- end col -->
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="footer-box-d">
                                     <h3>Opening Hours</h3>
@@ -267,11 +256,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- end footer-box-d -->
                             </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end footer-in-main -->
                     </div>
                     <!-- end row -->
                 </div>
