@@ -131,7 +131,7 @@
                         <img src="images/food.png" class="" alt="Card image cap" style="height: 110px; width: 110px; margin-bottom: -30px;margin-top: 20px; ">
                         <div class="card-body" style=" margin-left: 220px;">
                         <h1 class="card-title" style="font-style: normal; font-size: 25px;margin-top: -90px;"><b><%=rs.getString(2)%></b> <span style="margin-left: 400px;">- <%=rs.getString(3)%></span></h1>
-                        <p class="card-text" style="font-size: 20px; "><%=rs.getString(4)%>/5
+                        <p class="card-text" style="font-size: 20px; "><%=rs.getString(4)%>/5 <span style="margin-left: 400px;">- <%=rs.getString(6)%> &nbsp;<%=rs.getString(7)%></span>
                         <p class="card-text" style="font-size: 20px; "><%=rs.getString(5)%>
                         <br />-----------------------------------------------------------------------------------------------------------------------------------------------
                     </div>

@@ -123,7 +123,7 @@
             <div class="container">
                 <%  String pno = null;     
                     try {
-                        PreparedStatement pstn1 = con.prepareStatement("select * from fooddetails where FoodCategory='Chinese' AND MenuCategory='Starter'");
+                        PreparedStatement pstn1 = con.prepareStatement("select * from fooddetails where FoodCategory='Chinese'");
                         ResultSet rs = pstn1.executeQuery();
                         while (rs.next()) {
                             byte[] imgData = rs.getBytes(7);

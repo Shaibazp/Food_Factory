@@ -68,10 +68,8 @@
                                     <li class="active"><a href="#banner">Home</a></li>
                                     <li><a href="food.jsp">My Order</a></li>
                                     <li><a href="bills.jsp">My Bills</a></li>
-                                   
                                     <li><a href="review.jsp">Review</a></li>
                                     <li><a href="feedback.jsp">Feedback</a></li>
-                            <!--  <li><a href="#reservation">Reservaion</a></li>-->
                                      <li><a href="gallery.jsp">Gallery</a></li>
                                       <li><a href="AboutUS.jsp">About us</a></li>
                                     <li><a href="#footer">Contact us</a></li>
@@ -132,7 +130,7 @@
                                     </div>
                                     <div class="blog-dit">
                                         <p><span>25 NOVEMBER, 2014</span></p>
-                                         <a href="breakfast.jsp"> <h2>Breakfast</h2></a>
+                                         <a href="southindian.jsp"> <h2>South Indian</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>
                                 </div>
@@ -150,7 +148,7 @@
                                     </div>
                                     <div class="blog-dit">
                                         <p><span>2 NOVEMBER, 2014</span></p>
-                                          <a href="maincource.jsp"><h2>Main Cource</h2></a>
+                                          <a href="northindian.jsp"><h2>North Indian</h2></a>
                                         <h5>BY Jeffrey Spender</h5>
                                     </div>
                                 </div>
@@ -168,7 +166,7 @@
                                     </div>
                                     <div class="blog-dit">
                                         <p><span>4 NOVEMBER, 2014</span></p>
-                                        <a href="deserts.jsp"> <h2>Deserts</h2></a>
+                                        <a href="Maharashtrian.jsp"> <h2>Maharashtrian</h2></a>
                                         <h5>BY Monica Reyes</h5>
                                     </div>
                                 </div>
@@ -186,7 +184,7 @@
                                     </div>
                                     <div class="blog-dit">
                                         <p><span>12 NOVEMBER, 2014</span></p>
-                                         <a href="drinks.jsp"><h2>Drinks</h2></a>
+                                         <a href="other.jsp"><h2>Others</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>
                                 </div>

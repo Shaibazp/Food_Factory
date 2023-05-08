@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@page import="java.util.Base64"%>
 <%@page import="java.io.OutputStream"%>
 <%@page import="java.text.SimpleDateFormat"%>
@@ -12,12 +13,14 @@
     String comment = request.getParameter("commentt");
         try 
         {
-            String sql = "insert into review(menu, uname, rating, comment) values(?,?,?,?)";
+            String sql = "insert into review(menu, uname, rating, comment, rDate, rTime) values(?,?,?,?,?,?)";
             PreparedStatement pstmt = con.prepareStatement(sql);
             pstmt.setString(1, menu);
             pstmt.setString(2, uname);
             pstmt.setString(3, rating);
             pstmt.setString(4, comment);
+            pstmt.setString(5, String.valueOf(LocalDate.now()));
+            pstmt.setString(6, new SimpleDateFormat("HH:MM:SS").format(new Date()));
             
             int row = pstmt.executeUpdate();
             if (row > 0) {

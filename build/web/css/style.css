@@ -390,6 +390,16 @@ html, body{ height: 100%; }
 	min-height:100%;
 }
 
+.banner1{
+	background:url(../images/banner.jpg) no-repeat center top;
+	background-attachment:fixed;
+	background-size:cover;
+	height:100vh;
+	min-height:25%;
+}
+.banner1 .container, .banner .banner-static, .banner .col-lg-12 {
+    height: 25%;
+}
 .banner .container, .banner .banner-static, .banner .col-lg-12 {
     height: 100%;
 }
