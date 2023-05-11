@@ -28,6 +28,10 @@
     {
             response.sendRedirect("admin_home.jsp");
     }
+    else if(username.equals("chef") && password.equals("1122"))
+    {
+            response.sendRedirect("chef_home.jsp");
+    }
     else
     {
         %>

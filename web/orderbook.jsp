@@ -17,7 +17,7 @@
         {
 
             // constructs SQL statement
-            String sql = "insert into orderdetail(dishname, foodcate , menucate, price, qnt, mobile) value(?,?,?,?,?,?)";
+            String sql = "insert into orderdetail(dishname, foodcate , menucate, price, qnt, mobile, order_status, review_status, tableNo) value(?,?,?,?,?,?,?,?,?)";
             PreparedStatement pstmt = con.prepareStatement(sql);
             pstmt.setString(1, dname);
             pstmt.setString(2, fcate);
@@ -25,6 +25,9 @@
             pstmt.setString(4, price);
             pstmt.setString(5, "1");
             pstmt.setString(6, mobile);
+            pstmt.setString(7, "0");
+            pstmt.setString(8, "Your Order is Submited");
+            pstmt.setInt(9, Integer.valueOf((String)session.getAttribute("tableNo").toString()));
             int row = pstmt.executeUpdate();
             if (row > 0) {
                 %>

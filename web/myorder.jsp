@@ -43,7 +43,7 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-
+        <meta http-equiv="refresh" content="10" />
     </head>
 
     <body>
@@ -129,11 +129,46 @@
                         while (rs.next()) {
 %>
                 <div class="card mb-3">
+                    <script>
+                        var timeLimitInMinutes = 10;
+var timeLimitInSeconds = timeLimitInMinutes * 60;
+var timerElement = document.getElementById('timer');
+
+function startTimer() {
+  timeLimitInSeconds--;
+  var minutes = Math.floor(timeLimitInSeconds / 60);
+  var seconds = timeLimitInSeconds % 60;
+
+  if (timeLimitInSeconds < 0) {
+    timerElement.textContent = '00:00';
+    clearInterval(timerInterval);
+    return;
+  }
+
+  if (minutes < 10) {
+    minutes = '0' + minutes;
+  }
+  if (seconds < 10) {
+    seconds = '0' + seconds;
+  }
+
+  timerElement.textContent = minutes + ':' + seconds;
+}
+
+var timerInterval = setInterval(startTimer, 1000);
+                        </script>
                         <img src="images/food.png" class="" alt="Card image cap" style="height: 110px; width: 110px; margin-bottom: -120px;">
                         <div class="card-body" style=" margin-left: 220px;">
-                        <h1 class="card-title" style="font-style: normal; font-size: 25px;"><b><%=rs.getString(2)%></b></h1>
-                        <p class="card-text" style="font-size: 20px; ">Rs. <%=rs.getString(5)%> .00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Serves 1  </p>
-                        <p class="card-text" style="font-size: 20px; margin-top: -15px;"> Delicious <%=rs.getString(3)%> Food.
+                        <h1 class="card-title" style="font-style: normal; font-size: 25px;"><b><%=rs.getString(2)%></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> 
+                        <p class="card-text" style="font-size: 20px; ">Rs. <%=rs.getString(5)%> .00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Serves 1   </p>
+                        <p class="card-text" style="font-size: 20px; margin-top: -15px;"> <marquee class="marq" direction="left" loop="" hspace="70%"><%=rs.getString(9)%>.</marquee>
+                        <style>
+		.marq {
+                        margin-left: 0px;
+			padding-top: 10px;
+			padding-bottom: 30px;
+		}
+	</style>
                         <div class="reserve-book-btn" style="margin-left: 670px;margin-top: -120px;">
                             <a href="updatenoPlates.jsp?type=m&id=<%=rs.getString(1)%>&qty=<%=rs.getString(6)%>" class="btn btn-primary" style="height: 50px;width: 60px;font-weight: bold;font-size: 20px;">-1</a> <span style="font-weight: bold;font-size: 20px;margin-left: 20px;margin-right: 20px;"><%=rs.getString(6)%></span> <a href="updatenoPlates.jsp?type=a&id=<%=rs.getString(1)%>&qty=<%=rs.getString(6)%>" class="btn btn-primary" style="height: 50px;width: 60px;font-weight: bold;font-size: 20px;">+1</a>
                         </div> <br /><br />

@@ -124,7 +124,7 @@
                 <%  String pno = null;     
                     try {
                         float ttl = 0;
-                        PreparedStatement pstn1 = con.prepareStatement("select * from orderdetail where mobile=?");
+                        PreparedStatement pstn1 = con.prepareStatement("select * from orderdetail where mobile=? AND order_status=0");
                         pstn1.setString(1, (String)session.getAttribute("mobile").toString());
                         ResultSet rs = pstn1.executeQuery();
                         while (rs.next()) {

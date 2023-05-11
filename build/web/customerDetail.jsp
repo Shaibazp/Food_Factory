@@ -1,3 +1,4 @@
+<%@page import="java.util.Random"%>
 <%@page import="java.time.LocalDate"%>
 <%@page import="java.util.Base64"%>
 <%@page import="java.io.OutputStream"%>
@@ -8,6 +9,8 @@
 <%@ include file="DB_Connection.jsp"%>
 <%    String CustomerName = request.getParameter("CustomerName");
     String CustomerNumber = request.getParameter("CustomerNumber");
+    Random random = new Random();
+    session.setAttribute("tableNo", random.nextInt(5));
     session.setAttribute("mobile", CustomerNumber);
     session.setAttribute("name", CustomerName);
     SimpleDateFormat smf =new SimpleDateFormat("HH:MM:SS");

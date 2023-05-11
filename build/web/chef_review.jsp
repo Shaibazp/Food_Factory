@@ -71,14 +71,12 @@
                                 </div>s
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li ><a href="#banner">Home</a></li>
-                                        <li><a href="food.jsp">Food Order</a></li>
-                                        <li class="active"><a href="myorder.jsp">My Order</a></li>
-                                        <li><a href="bills.jsp">My Bills</a></li>
-                                        <li><a href="review.jsp">Review</a></li>
-                                        <li><a href="gallery.jsp">Gallery</a></li>
-                                        <li><a href="AboutUS.jsp">About us</a></li>
-                                        <li><a href="#footer">Contact us</a></li>
+                                        <li ><a href="chef_home.jsp">Home</a></li>
+                                        <li><a href="order_ongoing.jsp">Ongoing Order</a></li>
+                                        <li ><a href="order_completed.jsp">Completed Order</a></li>
+                                        <li ><a href="order_total.jsp">Total Order</a></li>
+                                        <li class="active"><a href="chef_review.jsp">Review</a></li>
+                                        <li><a href="index.jsp">Logout</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -114,7 +112,7 @@
         <br />
         <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
             <h2 class="block-title text-center">
-                Bills Details	
+                Review
             </h2>
         </div>
         <br>
@@ -123,38 +121,22 @@
             <div class="container">
                 <%  String pno = null;     
                     try {
-                        float ttl = 0;
-                        PreparedStatement pstn1 = con.prepareStatement("select * from orderdetail where mobile=? AND order_status=0");
-                        pstn1.setString(1, (String)session.getAttribute("mobile").toString());
+                        PreparedStatement pstn1 = con.prepareStatement("select * from review");
                         ResultSet rs = pstn1.executeQuery();
                         while (rs.next()) {
-                            ttl = ttl + (Float.parseFloat(rs.getString(5)) * Float.parseFloat(rs.getString(6)));
 %>
-                <div class="card mb-3">
-                        <img src="images/food.png" class="" alt="Card image cap" style="height: 110px; width: 110px; margin-bottom: -120px;">
+<div class="card mb-3">
+                        <img src="images/food.png" class="" alt="Card image cap" style="height: 110px; width: 110px; margin-bottom: -30px;margin-top: 20px; ">
                         <div class="card-body" style=" margin-left: 220px;">
-                        <h1 class="card-title" style="font-style: normal; font-size: 25px;"><b><%=rs.getString(2)%></b></h1>
-                        <p class="card-text" style="font-size: 20px; ">Rs. <%=rs.getString(5)%>.00/Plate <span style="margin-left: 230px;font-weight: bold;"><%=rs.getString(5)%>.00 * <%=rs.getString(6)%></span>  </p>
-                        <p class="card-text" style="font-size: 20px; margin-top: -15px;"> No. of Plates:  <%=rs.getString(6)%> 
-                        <div class="reserve-book-btn" style="margin-left: 670px;margin-top: -110px;">
-                            
-                            <span style="font-weight: bold;font-size: 20px;"><%= Float.parseFloat(rs.getString(5)) * Float.parseFloat(rs.getString(6))%>0</span>
-                        </div> <br /><br />
+                        <h1 class="card-title" style="font-style: normal; font-size: 25px;margin-top: -90px;"><b><%=rs.getString(2)%></b> <span style="margin-left: 400px;">- <%=rs.getString(3)%></span></h1>
+                        <p class="card-text" style="font-size: 20px; "><%=rs.getString(4)%>/5 <span style="margin-left: 400px;">- <%=rs.getString(6)%> &nbsp;<%=rs.getString(7)%></span>
+                        <p class="card-text" style="font-size: 20px; "><%=rs.getString(5)%>
+                        <br />-----------------------------------------------------------------------------------------------------------------------------------------------
                     </div>
                 </div>
                 <%
                        
 }
-                    %>
-                    <span style="margin-left: 220px;">=========================================================================================================</span>
-                    <p style="margin-left: 750px;font-weight: bold;font-size: 20px;">Total : <span style="margin-left: 80px;"><%=ttl%>0</span></p>
-                    <p style="margin-left: 750px;font-weight: bold;font-size: 20px;">Govt Taxes : <span style="margin-left: 30px;"><%=(ttl*5)/100%>0</span></p>
-                    <span style="margin-left: 750px;">=====================================</span>
-                    <p style="margin-left: 750px;font-weight: bold;font-size: 20px;">To Pay : <span style="margin-left: 70px;"><%=((ttl*5)/100)+ttl%>0</span></p>
-                    <!--<div class="reserve-book-btn" style="margin-left: 200px;margin-top: -180px;">-->
-                            <a href="payment.jsp?total=<%=((ttl*5)/100)+ttl%>" class="btn btn-primary" style="height: 50px;width: 150px;font-weight: bold;font-size: 20px;margin-left: 220px;margin-top: -180px;">Pay Online</a>
-                    <!--</div>-->
-                    <%
                     } catch (Exception e) {
                         System.out.println(e);
                     }
