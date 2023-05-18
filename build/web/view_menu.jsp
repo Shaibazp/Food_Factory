@@ -88,27 +88,15 @@
             </header>
         </div>
 
-        <div id="banner" class="banner full-screen-mode parallax">
+        <div id="banner" class="banner1 full-screen-mode parallax" style="height: 25px;">
             <div class="container pr">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="banner-static">
                         <div class="banner-text">
-                            <div class="banner-cell">
-                                <h1>Dinner with us  <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Friends:Family:Officemates" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
-                                <h2>Accidental appearances </h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod</p>
-
-
-                            </div>
-                            <!-- end banner-cell -->
                         </div>
-                        <!-- end banner-text -->
                     </div>
-                    <!-- end banner-static -->
                 </div>
-                <!-- end col -->
             </div>
-            <!-- end container -->
         </div>
         <!-- end banner -->
         <br />
@@ -131,7 +119,7 @@
                                 request.setAttribute("imgbase", encode);
                 %>
                 
-                        <div class="card mb-3">
+<!--                        <div class="card mb-3">
                             <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" alt="Card image cap" style="height: 80%; width: 60%;">
                             <div class="card-body" >
                                 <h1 class="card-title" style="font-style: italic;margin-top: 5px;margin-bottom: 10px;font-size: xx-large;"><b><%=rs.getString(2)%></b> </h1>   
@@ -139,7 +127,17 @@
                                 <h1 class="card-text" style="font-style: italic;font-size: x-large;margin-top: -10px;"><b>Rs.</b> <%=rs.getString(3)%>.00</h1>
                                 <h1 class="card-title" style="font-style: italic;font-size: x-large;margin-top: -10px;"><%=rs.getString(6)%></h1>
                             </div>
-                        </div><br />
+                        </div>-->
+                    <div class="card mb-3">
+                        <img src="data:image/jpeg;base64,${imgbase}" class="" alt="Card image cap" style="height: 200px; width: 300px; margin-bottom: -120px;">
+                        <!--<div class="card-body" style=" margin-left: 370px;">-->
+                        <h1 class="card-title" style="font-style: normal; font-size: 25px;margin-left: 370px;margin-top: -80px;"><b><%=rs.getString(2)%></b></h1> 
+                        <!--<h1 class="card-title" style="font-size: x-large;margin-top: -10px;"><%=rs.getString(2)%> is a delicious <%=rs.getString(4)%> Food, You can prefer it as a <%=rs.getString(5)%>. </h1>-->
+                        <p class="card-text" style="font-size: 20px; margin-left: 370px;"><%=rs.getString(6)%></p>
+                        <p class="card-text" style="font-size: 20px; margin-top: -15px;margin-left: 370px;">Rs. <%=rs.getString(3)%>.00</p>
+                    <!--</div>--><br />
+                    </div>
+                            <br />
                     
                 <%
                     }

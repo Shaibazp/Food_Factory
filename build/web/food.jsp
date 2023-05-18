@@ -65,7 +65,7 @@
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="active"><a href="">Home</a></li>
+                                    <li><a href="index.jsp">Home</a></li>
                                     <li class="active"><a href="food.jsp">My Order</a></li>
                                     <li><a href="bills.jsp">My Bills</a></li>
                                     <li><a href="review.jsp">Review</a></li>
@@ -88,28 +88,16 @@
     </div>
 	<!-- end site-header -->
 	
-    <div id="banner" class="banner full-screen-mode parallax">
-        <div class="container pr">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="banner-static">
-                    <div class="banner-text">
-                        <div class="banner-cell">
-                            <h1>Dinner with us  <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Friends:Family:Officemates" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
-                            <h2>Accidental appearances </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod</p>
-                           
-                            
+    <div id="banner" class="banner1 full-screen-mode parallax" style="height: 25px;">
+            <div class="container pr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="banner-static">
+                        <div class="banner-text">
                         </div>
-                        <!-- end banner-cell -->
                     </div>
-                    <!-- end banner-text -->
                 </div>
-                <!-- end banner-static -->
             </div>
-            <!-- end col -->
         </div>
-        <!-- end container -->
-    </div>
     <!-- end banner -->
     <div id="blog" class="blog-main pad-top-100 pad-bottom-100 parallax">
         <div class="container">

@@ -96,7 +96,7 @@
     </div>
 	<!-- end site-header -->
 	
-    <div id="banner" class="banner full-screen-mode parallax">
+<!--    <div id="banner" class="banner full-screen-mode parallax">
         <div class="container pr">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="banner-static">
@@ -108,16 +108,27 @@
                            
                             
                         </div>
-                        <!-- end banner-cell -->
+                         end banner-cell 
                     </div>
-                    <!-- end banner-text -->
+                     end banner-text 
                 </div>
-                <!-- end banner-static -->
+                 end banner-static 
             </div>
-            <!-- end col -->
+             end col 
         </div>
-        <!-- end container -->
-    </div>
+         end container 
+    </div>-->
+
+<div id="banner" class="banner1 full-screen-mode parallax" style="height: 25px;">
+            <div class="container pr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="banner-static">
+                        <div class="banner-text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- end banner -->
     <div id="blog" class="blog-main pad-top-100 pad-bottom-100 parallax">
         <div class="container">

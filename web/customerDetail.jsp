@@ -26,7 +26,7 @@
 %>
 <script>
     alert("Welcome To Food Factory");
-    window.location = "food.jsp";
+    window.location = "index.jsp";
 </script>
 <%
 //                response.sendRedirect("food.jsp");

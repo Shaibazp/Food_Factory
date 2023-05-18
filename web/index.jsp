@@ -66,12 +66,10 @@
                             <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active"><a href="#banner">Home</a></li>
-                                    <li><a href="food_login.jsp">Food Order</a></li>
-                                    <li><a href="bills.jsp">My Bills</a></li>
-                                   
+                                    <!--<li><a href="myorder.jsp">My Order</a></li>-->
+                                    <!--<li><a href="bills.jsp">My Bills</a></li>-->
                                     <li><a href="review.jsp">Review</a></li>
-                                    <li><a href="feedback.jsp">Feedback</a></li>
-                            <!--  <li><a href="#reservation">Reservaion</a></li>-->
+                                    <!--<li><a href="feedback.jsp">Feedback</a></li>-->
                                      <li><a href="gallery.jsp">Gallery</a></li>
                                       <li><a href="AboutUS.jsp">About us</a></li>
                                     <li><a href="#footer">Contact us</a></li>
@@ -91,7 +89,7 @@
     </div>
 	<!-- end site-header -->
 	
-    <div id="banner" class="banner full-screen-mode parallax">
+<!--    <div id="banner1" class="banner full-screen-mode parallax">
         <div class="container pr">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="banner-static">
@@ -100,23 +98,141 @@
                             <h1>Dinner with us  <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Friends:Family:Officemates" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
                             <h2>Accidental appearances </h2>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod</p>
-                            <div class="book-btn">
-                                <a href="food_login.jsp" class="table-btn hvr-underline-from-center">Order Food Here</a>
-                            </div>
-                         
+                           
+                            
                         </div>
-                        <!-- end banner-cell -->
+                         end banner-cell 
                     </div>
-                    <!-- end banner-text -->
+                     end banner-text 
                 </div>
-                <!-- end banner-static -->
+                 end banner-static 
             </div>
-            <!-- end col -->
+             end col 
+        </div>
+         end container 
+    </div>-->
+
+<div id="banner" class="banner1 full-screen-mode parallax" style="height: 25px;">
+            <div class="container pr">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="banner-static">
+                        <div class="banner-text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- end banner -->
+    <div id="blog" class="blog-main pad-top-100 pad-bottom-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="block-title text-center">
+						
+				</h2>
+                    <div class="blog-box clearfix">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-01.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>.</span></p>
+                                         <a href="food.jsp"> <h2>Menu</h2></a>
+                                        <h5>BY John Doggett</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>.</span></p>
+                                          <a href="myorder.jsp"><h2>My Order</h2></a>
+                                        <h5>BY Jeffrey Spender</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-03.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>.</span></p>
+                                        <a href="bills.jsp"> <h2>Pay Bill</h2></a>
+                                        <h5>BY Monica Reyes</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+<!--                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-04.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>.</span></p>
+                                         <a href="review.jsp"><h2>Review</h2></a>
+                                        <h5>BY John Doggett</h5>
+                                    </div>
+                                </div>
+                            </div>
+                             end col 
+                        </div>-->
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>.</span></p>
+                                          <a href="games.jsp"><h2>Games</h2></a>
+                                        <h5>BY Jeffrey Spender</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                    </div>
+                    <!-- end blog-box -->
+
+             
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
         </div>
         <!-- end container -->
     </div>
-    <!-- end banner -->
-
     <div id="about" class="about-main pad-top-100 pad-bottom-100">
         <div class="container">
             <div class="row">
@@ -708,10 +824,10 @@
                                                 <img src="images/gallery_09.jpg" alt="" />
                                             </div>
                                             <div class="col-md-12 description">
-                                                <h4>This is the 9 one on my Gallery</h4>
+                                                <h4>This is the 9 one on my Galleryggggggggggggg</h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>gggg
                                 </div>
                             </div>
                         </div>
@@ -746,100 +862,7 @@
     </div>
     <!-- end gallery-main -->
 
-    <div id="blog" class="blog-main pad-top-100 pad-bottom-100 parallax">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="block-title text-center">
-					Our Blog 	
-				</h2>
-                    <div class="blog-box clearfix">
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="images/featured-image-01.jpg" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                        <p><span>25 NOVEMBER, 2014</span></p>
-                                        <h2>LATEST RECIPES JUST IN!</h2>
-                                        <h5>BY John Doggett</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="images/featured-image-02.jpg" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                        <p><span>2 NOVEMBER, 2014</span></p>
-                                        <h2>NEW RECRUITS HAVE ARRIVED!</h2>
-                                        <h5>BY Jeffrey Spender</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="images/featured-image-03.jpg" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                        <p><span>4 NOVEMBER, 2014</span></p>
-                                        <h2>BAKING TIPS FROM THE PROS</h2>
-                                        <h5>BY Monica Reyes</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="images/featured-image-04.jpg" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                        <p><span>12 NOVEMBER, 2014</span></p>
-                                        <h2>ALL YOUR EGGS BELONG TO US</h2>
-                                        <h5>BY John Doggett</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                    </div>
-                    <!-- end blog-box -->
 
-                    <div class="blog-btn-v">
-                        <a class="hvr-underline-from-center" href="#">View the Blog</a>
-                    </div>
-
-                </div>
-                <!-- end col -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </div>
     <!-- end blog-main -->
 
     <div id="pricing" class="pricing-main pad-top-100 pad-bottom-100">

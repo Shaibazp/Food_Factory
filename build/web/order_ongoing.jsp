@@ -4,6 +4,7 @@
 <%@page import="java.text.DateFormat"%>
 <%@page import="java.util.Date"%>
 <%@page import="java.sql.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="DB_Connection.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -143,6 +144,7 @@
                     <th>Dish Name</th>
                     <th>Menu Category</th>
                     <th>Quantity</th>
+                    <th>Time</th>
                     <th>Preparing</th>
                     <th>Completed</th>
                 </tr>
@@ -162,11 +164,30 @@
                                 <td><%=rst.getString(2)%></td>
                                 <td><%=rst.getString(4)%></td>
                                 <td><%=rst.getString(6)%></td>
-                                <td>
-                                    <div class="reserve-book-btn" style="margin-top: -30px;">
-                                        <a href="updateChef_status.jsp?id=<%=rst.getString(1)%>&statusvalue=0&orderstatus=Food is being prepared" class="btn btn-primary" style="height: 40px;width: 120px;text-align: center;font-weight: bold;font-size: 15px;">Preparing</a>
-                                    </div>
-                                </td>
+                                    <script>
+                                           function saveTime(id, tm)
+                                           {
+                                               
+                                               if(confirm('Are you sure, You Accept This Order !!!!')) 
+                                                {
+                                                    
+                                                    console.log(tm);
+                                                    window.location.href = '<c:url value="/Updatetime.jsp"/>?times=' + tm+'&id='+id;
+//                                                    alert("yiiii");
+                                                }
+                                           }
+                                    </script>
+                                    <td>
+                                        <div class="reserve-book-btn" style="margin-top: -30px;">
+                                            <a onclick ="saveTime(<%=rst.getString(1)%>,10);"  class="btn btn-primary" style="height: 40px;width: 75px;text-align: center;font-weight: bold;font-size: 14px;text-align: left;"> 10 Min</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a onclick ="saveTime(<%=rst.getString(1)%>,20);"  class="btn btn-primary" style="height: 40px;width: 75px;text-align: center;font-weight: bold;font-size: 14px;text-align: left;"> 20 Min</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="reserve-book-btn" style="margin-top: -30px;">
+                                            <a href="updateChef_status.jsp?id=<%=rst.getString(1)%>&statusvalue=0&orderstatus=Food is being prepared"   class="btn btn-primary" style="height: 40px;width: 120px;text-align: center;font-weight: bold;font-size: 15px;">Preparing</a>
+                                        </div>
+                                    </td>
                                 <td>
                                     <div class="reserve-book-btn" style="margin-top: -30px;">
                                         <a href="updateChef_status.jsp?id=<%=rst.getString(1)%>&statusvalue=1&orderstatus=Food is Ready to Serve" class="btn btn-primary" style="height: 40px;width: 120px;text-align: center;font-weight: bold;font-size: 15px;">Completed</a>

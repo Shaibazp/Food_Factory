@@ -43,7 +43,8 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <meta http-equiv="refresh" content="10" />
+        <!--<meta http-equiv="refresh" content="10" />-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     </head>
 
     <body>
@@ -71,7 +72,7 @@
                                 </div>s
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li ><a href="#banner">Home</a></li>
+                                        <li ><a href="index.jsp">Home</a></li>
                                         <li><a href="food.jsp">Food Order</a></li>
                                         <li class="active"><a href="myorder.jsp">My Order</a></li>
                                         <li><a href="bills.jsp">My Bills</a></li>
@@ -88,27 +89,15 @@
             </header>
         </div>
 
-        <div id="banner" class="banner full-screen-mode parallax">
+        <div id="banner" class="banner1 full-screen-mode parallax" style="height: 25px;">
             <div class="container pr">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="banner-static">
                         <div class="banner-text">
-                            <div class="banner-cell">
-                                <h1>Dinner with us  <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Friends:Family:Officemates" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
-                                <h2>Accidental appearances </h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod</p>
-
-
-                            </div>
-                            <!-- end banner-cell -->
                         </div>
-                        <!-- end banner-text -->
                     </div>
-                    <!-- end banner-static -->
                 </div>
-                <!-- end col -->
             </div>
-            <!-- end container -->
         </div>
         <!-- end banner -->
         <br />
@@ -160,16 +149,24 @@ var timerInterval = setInterval(startTimer, 1000);
                         <img src="images/food.png" class="" alt="Card image cap" style="height: 110px; width: 110px; margin-bottom: -120px;">
                         <div class="card-body" style=" margin-left: 220px;">
                         <h1 class="card-title" style="font-style: normal; font-size: 25px;"><b><%=rs.getString(2)%></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> 
-                        <p class="card-text" style="font-size: 20px; ">Rs. <%=rs.getString(5)%> .00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Serves 1   </p>
-                        <p class="card-text" style="font-size: 20px; margin-top: -15px;"> <marquee class="marq" direction="left" loop="" hspace="70%"><%=rs.getString(9)%>.</marquee>
+                        <p class="card-text" style="font-size: 20px; ">Rs. <%=rs.getString(5)%> .00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Serves 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <% if(rs.getString(11) != null){out.print("Required Time : "+rs.getString(11)+" Min");}else{out.print("NA");}%></p>
+                        <div id="here" class="card-text" style="font-size: 20px; margin-top: -15px;color: black;"> <marquee class="marq" direction="left" loop="" hspace="70%"><%=rs.getString(9)%>.</marquee></div>
+                        <script> 
+$(document).ready(function(){
+setInterval(function(){
+      $("#here").load(window.location.href + " #here" );
+}, 30000);
+});
+</script>
                         <style>
 		.marq {
+                        margin-right: 310px;
                         margin-left: 0px;
 			padding-top: 10px;
 			padding-bottom: 30px;
 		}
 	</style>
-                        <div class="reserve-book-btn" style="margin-left: 670px;margin-top: -120px;">
+                        <div class="reserve-book-btn" style="margin-left: 720px;margin-top: -177px;">
                             <a href="updatenoPlates.jsp?type=m&id=<%=rs.getString(1)%>&qty=<%=rs.getString(6)%>" class="btn btn-primary" style="height: 50px;width: 60px;font-weight: bold;font-size: 20px;">-1</a> <span style="font-weight: bold;font-size: 20px;margin-left: 20px;margin-right: 20px;"><%=rs.getString(6)%></span> <a href="updatenoPlates.jsp?type=a&id=<%=rs.getString(1)%>&qty=<%=rs.getString(6)%>" class="btn btn-primary" style="height: 50px;width: 60px;font-weight: bold;font-size: 20px;">+1</a>
                         </div> <br /><br />
                     </div>

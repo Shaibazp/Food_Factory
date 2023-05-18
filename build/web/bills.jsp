@@ -71,10 +71,10 @@
                                 </div>s
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li ><a href="#banner">Home</a></li>
+                                        <li ><a href="index.jsp">Home</a></li>
                                         <li><a href="food.jsp">Food Order</a></li>
-                                        <li class="active"><a href="myorder.jsp">My Order</a></li>
-                                        <li><a href="bills.jsp">My Bills</a></li>
+                                        <li ><a href="myorder.jsp">My Order</a></li>
+                                        <li class="active"><a href="bills.jsp">My Bills</a></li>
                                         <li><a href="review.jsp">Review</a></li>
                                         <li><a href="gallery.jsp">Gallery</a></li>
                                         <li><a href="AboutUS.jsp">About us</a></li>
@@ -88,27 +88,15 @@
             </header>
         </div>
 
-        <div id="banner" class="banner full-screen-mode parallax">
+        <div id="banner" class="banner1 full-screen-mode parallax" style="height: 25px;">
             <div class="container pr">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="banner-static">
                         <div class="banner-text">
-                            <div class="banner-cell">
-                                <h1>Dinner with us  <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Friends:Family:Officemates" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
-                                <h2>Accidental appearances </h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod</p>
-
-
-                            </div>
-                            <!-- end banner-cell -->
                         </div>
-                        <!-- end banner-text -->
                     </div>
-                    <!-- end banner-static -->
                 </div>
-                <!-- end col -->
             </div>
-            <!-- end container -->
         </div>
         <!-- end banner -->
         <br />
