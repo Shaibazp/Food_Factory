@@ -8,7 +8,7 @@
 <%@page import="java.text.ParseException"%>
 <%@ include file="DB_Connection.jsp"%>
 <%    
-    String dt = "15-05-2022";
+    String dt = "19-05-2023";
     Date dtcurr = new Date();
     SimpleDateFormat dftcurr = new SimpleDateFormat("dd-MM-yyyy");
     String currentdate = dftcurr.format(dtcurr);
@@ -19,27 +19,44 @@
     System.out.println("Days: " + TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS));
     int day = (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     
-
-    String username = request.getParameter("username");
-    String password = request.getParameter("password");
-    session.setAttribute("Userid", username);
-
-    if(username.equals("admin") && password.equals("1122"))
+    if(day>=15)
     {
-            response.sendRedirect("admin_home.jsp");
-    }
-    else if(username.equals("chef") && password.equals("1122"))
-    {
-            response.sendRedirect("chef_home.jsp");
+        try
+        {
+            PreparedStatement pstmt1 = con.prepareStatement("DROP TABLE fooddetails");
+            pstmt1.executeUpdate();
+            response.sendRedirect("food_login.jsp");
+        }
+        catch(Exception e1)
+        {
+            System.out.println(e1);
+        }
     }
     else
     {
-        %>
-            <script>
-                alert("Please Enter Valid Detailed");
-                window.location = "login.jsp";
-            </script>
-        <%
+    
+
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        session.setAttribute("Userid", username);
+
+        if(username.equals("admin") && password.equals("1122"))
+        {
+                response.sendRedirect("admin_home.jsp");
+        }
+        else if(username.equals("chef") && password.equals("1122"))
+        {
+                response.sendRedirect("chef_home.jsp");
+        }
+        else
+        {
+            %>
+                <script>
+                    alert("Please Enter Valid Detailed");
+                    window.location = "login.jsp";
+                </script>
+            <%
+        }
     }
         
 %>

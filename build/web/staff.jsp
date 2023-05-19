@@ -119,13 +119,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-01.jpg" alt="" />
+                                        <img src="Imagess/Admin/Staff/Add Staff.png" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>25 NOVEMBER, 2014</span></p>
                                         <a href="add_staff.jsp"> <h2>Add Staff</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>
@@ -137,13 +136,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <img src="Imagess/Admin/Staff/View Staff.jpg" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>2 NOVEMBER, 2014</span></p>
                                           <a href="view_staff.jsp"><h2>View Staff</h2></a>
                                         <h5>BY Jeffrey Spender</h5>
                                     </div>
@@ -155,13 +153,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-03.jpg" alt="" />
+                                        <img src="Imagess/Admin/Staff/Edit Staff.png" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>4 NOVEMBER, 2014</span></p>
                                         <a href="edit_staff.jsp"> <h2>Edit Staff</h2></a>
                                         <h5>BY Monica Reyes</h5>
                                     </div>
@@ -173,13 +170,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-04.jpg" alt="" />
+                                        <img src="Imagess/Admin/Staff/Delete Staff.png" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>12 NOVEMBER, 2014</span></p>
                                          <a href="delete_staff.jsp"><h2>Delete Staff</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>

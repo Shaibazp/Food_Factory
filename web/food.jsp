@@ -111,13 +111,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-01.jpg" alt="" />
+                                        <img src="Imagess/Starters/South Starter.png" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>25 NOVEMBER, 2014</span></p>
                                          <a href="breakfast.jsp"> <h2>Starters</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>
@@ -129,13 +128,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <img src="Imagess/Main Dish/Main Dish Main Photo.jpg" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>2 NOVEMBER, 2014</span></p>
                                           <a href="maincource.jsp"><h2>Main Dish</h2></a>
                                         <h5>BY Jeffrey Spender</h5>
                                     </div>
@@ -147,13 +145,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-03.jpg" alt="" />
+                                        <img src="Imagess/Deserts Main Photo.jpg" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>4 NOVEMBER, 2014</span></p>
                                         <a href="deserts.jsp"> <h2>Deserts</h2></a>
                                         <h5>BY Monica Reyes</h5>
                                     </div>
@@ -165,13 +162,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-04.jpg" alt="" />
+                                        <img src="Imagess/Drink Main Image.jpg" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>12 NOVEMBER, 2014</span></p>
                                          <a href="drinks.jsp"><h2>Drinks</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>

@@ -142,13 +142,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-01.jpg" alt="" />
+                                        <img src="Imagess/Admin/Menu/Add Menu.jpg" alt="" style="height: 220px;"/>
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>25 NOVEMBER, 2014</span></p>
                                         <a href="add_food.jsp"> <h2>Add Menu</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>
@@ -160,13 +159,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <img src="Imagess/Admin/Menu/View Menu.png" alt="" style="height: 220px;"/>
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>2 NOVEMBER, 2014</span></p>
                                           <a href="view_menu.jsp"><h2>View Menu</h2></a>
                                         <h5>BY Jeffrey Spender</h5>
                                     </div>
@@ -178,13 +176,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-03.jpg" alt="" />
+                                        <img src="Imagess/Admin/Menu/Edit Menu.png" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>4 NOVEMBER, 2014</span></p>
                                         <a href="edit_food.jsp"> <h2>Edit Menu</h2></a>
                                         <h5>BY Monica Reyes</h5>
                                     </div>
@@ -196,13 +193,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-04.jpg" alt="" />
+                                        <img src="Imagess/Admin/Menu/Delete Menu.jpg" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>12 NOVEMBER, 2014</span></p>
                                          <a href="delete_menu.jsp"><h2>Delete Menu</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>

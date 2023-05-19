@@ -111,13 +111,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-01.jpg" alt="" />
+                                        <img src="Imagess/Starters/South Starter.png" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>25 NOVEMBER, 2014</span></p>
                                          <a href="southindian.jsp"> <h2>South Indian</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>
@@ -129,13 +128,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <img src="Imagess/Starters/North Starter.jpeg" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>2 NOVEMBER, 2014</span></p>
                                           <a href="northindian.jsp"><h2>North Indian</h2></a>
                                         <h5>BY Jeffrey Spender</h5>
                                     </div>
@@ -147,13 +145,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-03.jpg" alt="" />
+                                        <img src="Imagess/Starters/Chinese Starter.jpg" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>4 NOVEMBER, 2014</span></p>
                                         <a href="chinese.jsp"> <h2>Chinese</h2></a>
                                         <h5>BY Monica Reyes</h5>
                                     </div>
@@ -165,13 +162,12 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-04.jpg" alt="" />
+                                        <img src="Imagess/Starters/Main Photo Starter.jpg" alt="" style="height: 220px;" />
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>12 NOVEMBER, 2014</span></p>
                                          <a href="other.jsp"><h2>Others</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>

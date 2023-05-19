@@ -73,7 +73,7 @@
                                      <li><a href="gallery.jsp">Gallery</a></li>
                                       <li><a href="AboutUS.jsp">About us</a></li>
                                     <li><a href="#footer">Contact us</a></li>
-                                     <li><a href="login.jsp">Login</a></li>
+                                     <!--<li><a href="login.jsp">Login</a></li>-->
                                 </ul>
                             </div>
                             <!-- end nav-collapse -->
@@ -135,13 +135,13 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-01.jpg" alt="" />
+                                        <img src="images/featured-image-01.jpg" alt="" style="height: 220px;"/>
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>.</span></p>
+                                        
                                          <a href="food.jsp"> <h2>Menu</h2></a>
                                         <h5>BY John Doggett</h5>
                                     </div>
@@ -153,13 +153,13 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <img src="images/featured-image-02.jpg" alt="" style="height: 220px;"/>
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>.</span></p>
+                                        
                                           <a href="myorder.jsp"><h2>My Order</h2></a>
                                         <h5>BY Jeffrey Spender</h5>
                                     </div>
@@ -171,13 +171,13 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-03.jpg" alt="" />
+                                        <img src="Imagess/Main Screen/bill.jpg" alt="" style="height: 220px;"/>
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>.</span></p>
+                                        
                                         <a href="bills.jsp"> <h2>Pay Bill</h2></a>
                                         <h5>BY Monica Reyes</h5>
                                     </div>
@@ -207,14 +207,14 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="blog-block">
                                     <div class="blog-img-box">
-                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <img src="Imagess/Main Screen/games.jpg" alt="" style="height: 220px;"/>
                                         <div class="overlay">
                                             <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="blog-dit">
-                                        <p><span>.</span></p>
-                                          <a href="games.jsp"><h2>Games</h2></a>
+                                        
+                                          <a href="https://www.crazygames.com/"><h2>Games</h2></a>
                                         <h5>BY Jeffrey Spender</h5>
                                     </div>
                                 </div>
