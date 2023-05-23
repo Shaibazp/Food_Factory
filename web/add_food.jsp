@@ -71,8 +71,8 @@
                                         <li><a href="view_bills.jsp">View Bills</a></li>
                                         <li><a href="view_orders.jsp">View Orders</a></li>
                                         <li><a href="view_customer.jsp">View Customer</a></li>
-                                        <li><a href="review.jsp">Review</a></li>
-                                        <li><a href="index.jsp">Logout</a></li>
+                                        <li><a href="admin_review.jsp">Review</a></li>
+                                        <li><a href="food_login.jsp">Logout</a></li>
                                     </ul>
                                 </div>
                                 <!-- end nav-collapse -->
@@ -132,7 +132,6 @@
                                             <option value="North indian">North indian</option>
                                             <option value="Chinese">Chinese</option>
                                             <option value="Maharashtrian">Maharashtrian</option>
-                                            <option value="Other">Other</option>
                                         </select>
                                     </div>
                                 </div>
@@ -141,13 +140,10 @@
                                     <div class="form-box">
                                         <select name="MenuCategory" id="Menu_Category" class="selectpicker">
                                             <option selected disabled>Menu Category</option>
-                                            <option value="Breakfast">Breakfast</option>
                                             <option value="Main Dish">Main Dish</option>
                                             <option value="Desert">Desert</option>
                                             <option value="Starter">Starter</option>
                                             <option value="Drink">Drink</option>
-                                            <option value="Other">Other</option>
-
                                         </select>
                                     </div>
                                 </div>

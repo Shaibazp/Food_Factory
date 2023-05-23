@@ -71,14 +71,11 @@
                                 </div>s
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li ><a href="">Home</a></li>
-                                        <li><a href="food.jsp">Food Order</a></li>
+                                        <li ><a href="index.jsp">Home</a></li>
+<!--                                        <li><a href="food.jsp">Food Order</a></li>
                                         <li ><a href="myorder.jsp">My Order</a></li>
-                                        <li><a href="bills.jsp">My Bills</a></li>
+                                        <li><a href="bills.jsp">My Bills</a></li>-->
                                         <li class="active"><a href="review.jsp">Review</a></li>
-                                        <li><a href="gallery.jsp">Gallery</a></li>
-                                        <li><a href="AboutUS.jsp">About us</a></li>
-                                        <li><a href="#footer">Contact us</a></li>
                                     </ul>
                                 </div>
                             </nav>

@@ -78,7 +78,7 @@
                                         <li><a href="view_orders.jsp">View Orders</a></li>
                                         <li><a href="view_customer.jsp">View Customer</a></li>
                                         <li class="active"><a href="admin_review.jsp">Review</a></li>
-                                        <li><a href="index.jsp">Logout</a></li>
+                                        <li><a href="food_login.jsp">Logout</a></li>
                                     </ul>
                                 </div>
                             </nav>

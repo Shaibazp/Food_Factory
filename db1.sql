@@ -16,6 +16,19 @@ USE `food_factory`;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO';
 
+/*Table structure for table `bills` */
+
+DROP TABLE IF EXISTS `bills`;
+
+CREATE TABLE `bills` (
+  `bid` int NOT NULL AUTO_INCREMENT,
+  `cName` varchar(100) DEFAULT NULL,
+  `tableNo` varchar(10) DEFAULT NULL,
+  `totalAmount` varchar(100) DEFAULT NULL,
+  `bdate` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`bid`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 /*Table structure for table `customerdetail` */
 
 DROP TABLE IF EXISTS `customerdetail`;
@@ -27,7 +40,7 @@ CREATE TABLE `customerdetail` (
   `cdate` varchar(20) DEFAULT NULL,
   `cTime` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 /*Table structure for table `fooddetails` */
 
@@ -61,7 +74,7 @@ CREATE TABLE `orderdetail` (
   `tableNo` int DEFAULT NULL,
   `Dtime` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`oid`)
-) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 /*Table structure for table `plates` */
 

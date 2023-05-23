@@ -76,9 +76,6 @@
                                         <li ><a href="myorder.jsp">My Order</a></li>
                                         <li class="active"><a href="bills.jsp">My Bills</a></li>
                                         <li><a href="review.jsp">Review</a></li>
-                                        <li><a href="gallery.jsp">Gallery</a></li>
-                                        <li><a href="AboutUS.jsp">About us</a></li>
-                                        <li><a href="#footer">Contact us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -140,8 +137,16 @@
                     <span style="margin-left: 750px;">=====================================</span>
                     <p style="margin-left: 750px;font-weight: bold;font-size: 20px;">To Pay : <span style="margin-left: 70px;"><%=((ttl*5)/100)+ttl%>0</span></p>
                     <!--<div class="reserve-book-btn" style="margin-left: 200px;margin-top: -180px;">-->
-                            <a href="payment.jsp?total=<%=((ttl*5)/100)+ttl%>" class="btn btn-primary" style="height: 50px;width: 150px;font-weight: bold;font-size: 20px;margin-left: 220px;margin-top: -180px;">Pay Online</a>
+                    <a href="savebill.jsp?total=<%=((ttl*5)/100)+ttl%>&type=online" class="btn btn-primary" style="height: 50px;width: 150px;font-weight: bold;font-size: 20px;margin-left: 220px;margin-top: -180px;">Pay Online</a>
+                            <a href="savebill.jsp?total=<%=((ttl*5)/100)+ttl%>&type=cash" onclick="showmsg();" class="btn btn-primary" style="height: 50px;width: 150px;font-weight: bold;font-size: 20px;margin-left: 20px;margin-top: -180px;">Cash Pay</a>
+                    <!--<a href="index.jsp" class="btn btn-primary" style="height: 50px;width: 150px;font-weight: bold;font-size: 20px;margin-left: 220px;margin-top: -180px;">Done</a>-->
                     <!--</div>-->
+                    <script>
+                        function showmsg()
+                        {
+                            alert("Waiter is Comming to Collect the Cash");
+                        }
+                    </script>
                     <%
                     } catch (Exception e) {
                         System.out.println(e);

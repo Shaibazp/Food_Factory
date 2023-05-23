@@ -79,15 +79,8 @@
                                         <li><a href="view_bills.jsp">View Bills</a></li>
                                         <li><a href="view_orders.jsp">View Orders</a></li>
                                         <li><a href="view_customer.jsp">View Customer</a></li>
-                                        <li><a href="review.jsp">Review</a></li>
-                                        <!--    <li><a href="edit_food.jsp">Edit Food</a></li>
-                                              <li><a href="edit_staff.jsp">Edit Staff</a></li>
-                                        <li><a href="feedback.jsp">Feedback</a></li>
-                                 <li><a href="#reservation">Reservaion</a></li>
-                                         
-                                             <li><a href="AboutUS.jsp">About us</a></li>
-                                           <li><a href="#footer">Contact us</a></li>-->
-                                        <li><a href="index.jsp">Logout</a></li>
+                                        <li><a href="admin_review.jsp">Review</a></li>
+                                        <li><a href="food_login.jsp">Logout</a></li>
                                     </ul>
                                 </div>
                                 <!-- end nav-collapse -->

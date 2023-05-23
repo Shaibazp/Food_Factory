@@ -75,10 +75,6 @@
                                         <li><a href="myorder.jsp">My Order</a></li>
                                         <li><a href="bills.jsp">My Bills</a></li>
                                         <li><a href="review.jsp">Review</a></li>
-                                        <li><a href="feedback.jsp">Feedback</a></li>
-                                        <li><a href="gallery.jsp">Gallery</a></li>
-                                        <li><a href="AboutUS.jsp">About us</a></li>
-                                        <li><a href="#footer">Contact us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -121,19 +117,16 @@
 %>
 
                 <div class="card mb-3">
-                    <img src="data:image/jpeg;base64,${imgbase}" class="card-img-top" style="height: 80%; width: 60%;">
-                    <div class="card-body">
-                        <h1   class="card-title" style="font-style: italic;margin-top: 5px;margin-bottom: 10px;font-size: x-large;font-weight: bold;"><span id="dishname"><%=rs.getString(2)%></span></h1>   
-                        <h1 class="card-title" style="font-style: italic;margin-top: -7px;font-size: 22px;"><b><%=rs.getString(2)%></b> is a delicious <span id="foodc" style="font-weight: bold;"><%=rs.getString(4)%></span> Food, You can prefer it as a <span id="menuc"><%=rs.getString(5)%></span>. </h1>
-                        <h1 class="card-text" style="font-style: italic;margin-top: -7px;font-size: 22px;"><b>Rs.</b> <span id="price"><%=rs.getString(3)%></span>.00</h1>
-                                <h1 class="card-title" style="font-style: italic;margin-top: -7px;font-size: 22px;"><%=rs.getString(6)%></h1>
-                        <div class="form-box" style="width: 300px;">
-                            
+                    <img src="data:image/jpeg;base64,${imgbase}" class="" alt="Card image cap" style="height: 230px; width: 300px; margin-bottom: -120px;">
+                        <h1 class="card-title" style="font-style: normal; font-size: 25px;margin-left: 370px;margin-top: -110px;"><b><%=rs.getString(2)%></b></h1> 
+                        <!--<h1 class="card-title" style="font-size: x-large;margin-top: -10px;"><%=rs.getString(2)%> is a delicious <%=rs.getString(4)%> Food, You can prefer it as a <%=rs.getString(5)%>. </h1>-->
+                        <p class="card-text" style="font-size: 20px; margin-left: 370px;"><%=rs.getString(6)%></p>
+                        <p class="card-text" style="font-size: 20px; margin-top: -15px;margin-left: 370px;">Rs. <%=rs.getString(3)%>.00</p>
+                        <div class="form-box" style="width: 300px;">   
                         </div>
-                        <div class="reserve-book-btn" style="margin-left: 170px;margin-top: -105px;">
+                        <div class="reservse-book-btn" style="margin-left: 370px;margin-top: -85px;">
                             <a href="orderbook.jsp?dname=<%=rs.getString(2)%>&fcate=<%=rs.getString(4)%>&mcate=<%=rs.getString(5)%>&price=<%=rs.getString(3)%>" class="btn btn-primary" style="height: 50px;width: 300px;text-align: center;font-weight: bold;font-size: 20px;">Add to Cart</a>
                         </div> <br /><br />
-                    </div>
                 </div>
 
 

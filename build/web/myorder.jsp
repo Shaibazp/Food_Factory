@@ -77,9 +77,6 @@
                                         <li class="active"><a href="myorder.jsp">My Order</a></li>
                                         <li><a href="bills.jsp">My Bills</a></li>
                                         <li><a href="review.jsp">Review</a></li>
-                                        <li><a href="gallery.jsp">Gallery</a></li>
-                                        <li><a href="AboutUS.jsp">About us</a></li>
-                                        <li><a href="#footer">Contact us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -105,6 +102,7 @@
             <h2 class="block-title text-center">
                 Order Details	
             </h2>
+            <p style="margin-left: 550px;font-weight: bold;font-size: x-large">Required Time : <span id="timer"> 20:00</span></p>
         </div>
         <br>
 
@@ -119,7 +117,7 @@
 %>
                 <div class="card mb-3">
                     <script>
-                        var timeLimitInMinutes = 10;
+                        var timeLimitInMinutes = 20;
 var timeLimitInSeconds = timeLimitInMinutes * 60;
 var timerElement = document.getElementById('timer');
 
@@ -146,16 +144,17 @@ function startTimer() {
 
 var timerInterval = setInterval(startTimer, 1000);
                         </script>
+                        
                         <img src="images/food.png" class="" alt="Card image cap" style="height: 110px; width: 110px; margin-bottom: -120px;">
                         <div class="card-body" style=" margin-left: 220px;">
                         <h1 class="card-title" style="font-style: normal; font-size: 25px;"><b><%=rs.getString(2)%></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> 
-                        <p class="card-text" style="font-size: 20px; ">Rs. <%=rs.getString(5)%> .00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Serves 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <% if(rs.getString(11) != null){out.print("Required Time : "+rs.getString(11)+" Min");}else{out.print("NA");}%></p>
+                        <p class="card-text" style="font-size: 20px; ">Rs. <%=rs.getString(5)%> .00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Serves 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </p>
                         <div id="here" class="card-text" style="font-size: 20px; margin-top: -15px;color: black;"> <marquee class="marq" direction="left" loop="" hspace="70%"><%=rs.getString(9)%>.</marquee></div>
                         <script> 
 $(document).ready(function(){
 setInterval(function(){
       $("#here").load(window.location.href + " #here" );
-}, 30000);
+}, 90000);
 });
 </script>
                         <style>

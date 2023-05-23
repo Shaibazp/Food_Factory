@@ -106,7 +106,7 @@
                                         <li ><a href="order_completed.jsp">Completed Order</a></li>
                                         <li class="active"><a href="order_total.jsp">Total Order</a></li>
                                         <li><a href="chef_review.jsp">Review</a></li>
-                                        <li><a href="index.jsp">Logout</a></li>
+                                        <li><a href="food_login.jsp">Logout</a></li>
                                     </ul>
                                 </div>
                             </nav>
