@@ -73,9 +73,9 @@
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="active"><a href="#banner">Home</a></li>
                                         <li><a href="myorder.jsp">My Order</a></li>
-                                        <li><a href="bills.jsp">My Bills</a></li>
+<!--                                        <li><a href="bills.jsp">My Bills</a></li>
                                         <li><a href="review.jsp">Review</a></li>
-                                        <li><a href="feedback.jsp">Feedback</a></li>
+                                        <li><a href="feedback.jsp">Feedback</a></li>-->
                                     </ul>
                                 </div>
                             </nav>

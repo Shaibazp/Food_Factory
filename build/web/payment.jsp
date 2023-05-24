@@ -77,7 +77,7 @@
                                         <li><a href="food.jsp">Food Order</a></li>
                                         <li class="active"><a href="myorder.jsp">My Order</a></li>
                                         <li><a href="bills.jsp">My Bills</a></li>
-                                        <li><a href="review.jsp">Review</a></li>
+                                        <!--<li><a href="review.jsp">Review</a></li>-->
                                     </ul>
                                 </div>
                             </nav>

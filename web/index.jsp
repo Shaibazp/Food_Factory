@@ -68,7 +68,7 @@
                                     <li class="active"><a href="#banner">Home</a></li>
                                     <!--<li><a href="myorder.jsp">My Order</a></li>-->
                                     <!--<li><a href="bills.jsp">My Bills</a></li>-->
-                                    <li><a href="review.jsp">Review</a></li>
+                                    <!--<li><a href="review.jsp">Review</a></li>-->
                                     <!--<li><a href="feedback.jsp">Feedback</a></li>-->
                                      <!--<li><a href="gallery.jsp">Gallery</a></li>-->
                                      <li><a href="food_login.jsp">Logout</a></li>
@@ -155,7 +155,7 @@
                                     </div>
                                     <div class="blog-dit">
                                         
-                                          <a href="myorder.jsp"><h2>My Order</h2></a>
+                                          <a href="review.jsp"><h2>Review</h2></a>
                                         <h5>BY Jeffrey Spender</h5>
                                     </div>
                                 </div>

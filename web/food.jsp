@@ -67,7 +67,7 @@
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="index.jsp">Home</a></li>
                                     <li class="active"><a href="food.jsp">My Order</a></li>
-                                    <li><a href="bills.jsp">My Bills</a></li>
+                                    <!--<li><a href="bills.jsp">My Bills</a></li>-->
                                     <li><a href="review.jsp">Review</a></li>
                                 </ul>
                             </div>
